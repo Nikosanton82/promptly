@@ -14,7 +14,7 @@ export const connectToDB = async () => {
       dbName: "share_prompt",
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      bufferTimeoutMS: 30000, // Increase the timeout to 30 seconds
+      socketTimeoutMS: 5000,
     });
     isConnected = true;
 
